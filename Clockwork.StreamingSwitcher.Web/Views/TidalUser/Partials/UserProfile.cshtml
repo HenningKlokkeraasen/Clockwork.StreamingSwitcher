@@ -1,0 +1,25 @@
+﻿@using Microsoft.AspNet.Identity
+@using Clockwork.StreamingSwitcher.Web.Models.Tidal
+@model OpenTidl.Models.UserModel
+@if (Model == null)
+{
+    return;
+}
+
+<div class="tidal-profile">
+    <div class="tidal-profile-row">
+        <div class="tidal-profile-cell">
+            @if (!Model.Picture.IsEmpty())
+            {
+                <div class="profilePicture">
+                    @TidalImage.Render(new ImageViewModel { ImageId =  Model.Picture, Dimension = TidalImageDimension.ProfilePic })
+                </div>
+            }
+        </div>
+        <div class="tidal-profile-cell">
+            You are logged in to Tidal as
+            <br />
+            @Model.FirstName @Model.LastName (@User.Identity.GetUserName())
+        </div>
+    </div>
+</div>
