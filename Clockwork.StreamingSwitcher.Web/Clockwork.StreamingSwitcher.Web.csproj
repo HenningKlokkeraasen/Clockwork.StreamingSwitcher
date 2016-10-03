@@ -144,6 +144,16 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include=".bowerrc" />
     <Content Include="bower.json" />
+    <Content Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css" />
+    <Content Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <Content Include="wwwroot\lib\datatables\media\css\dataTables.bootstrap.min.css" />
+    <Content Include="wwwroot\lib\datatables\media\images\sort_asc.png" />
+    <Content Include="wwwroot\lib\datatables\media\images\sort_asc_disabled.png" />
+    <Content Include="wwwroot\lib\datatables\media\images\sort_both.png" />
+    <Content Include="wwwroot\lib\datatables\media\images\sort_desc.png" />
+    <Content Include="wwwroot\lib\datatables\media\images\sort_desc_disabled.png" />
+    <Content Include="wwwroot\lib\datatables\media\js\jquery.dataTables.min.js" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.min.js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
