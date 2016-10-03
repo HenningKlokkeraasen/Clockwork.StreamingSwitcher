@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/ClientSide/CSS/Site.css" />
     <link rel="stylesheet" href="/ClientSide/CSS/Tidal.css" />
-    <link rel="stylesheet" href="/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
     @RenderSection("css", required: false)
     <title>@ViewBag.Title - Music Streaming Service Switcher</title>
 </head>
@@ -63,8 +63,8 @@
         <p>&copy; @DateTime.Now.Year - Music Streaming Service Switcher</p>
     </footer>
 </div>
-    <script src="/wwwroot/lib/jquery/dist/jquery.min.js"></script>
-    <script src="/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     @RenderSection("scripts", required: false)
 </body>
 </html>

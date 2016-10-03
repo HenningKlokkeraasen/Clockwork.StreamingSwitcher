@@ -15,6 +15,3 @@
 **/packages/*
 # except build/, which is used as an MSBuild target.
 !**/packages/build/
-
-# Clockwork.StreamingSwitcher
-Clockwork.StreamingSwitcher.Web/wwwroot/lib/*
