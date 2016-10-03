@@ -35,3 +35,7 @@ Most or all of these should be incorporated into this project
 ## Built with
 
 * OpenTidl https://github.com/jackfagner/OpenTidl
+* See packages.config and bower.json
+
+## Disclaimer
+This product uses TIDAL but is not endorsed, certified or otherwise approved in any way by TIDAL. TIDAL is the registered trade mark of Aspiro.
