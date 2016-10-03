@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/ClientSide/CSS/Tidal.css" />
     <link rel="stylesheet" href="/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css"/>
     @RenderSection("css", required: false)
-    <title>@ViewBag.Title - Tidal Explorer</title>
+    <title>@ViewBag.Title - Music Streaming Service Switcher</title>
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -18,15 +18,39 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Tidal Explorer", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Music Streaming Service Switcher", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Playlists", "Index", "TidalUserPlaylists")</li>
-                    <li>@Html.ActionLink("Fav Artists", "Artists", "TidalUserFavorites")</li>
-                    <li>@Html.ActionLink("Fav Albums", "Albums", "TidalUserFavorites")</li>
-                    <li>@Html.ActionLink("Fav Tracks", "Tracks", "TidalUserFavorites")</li>
-                    <li>@Html.ActionLink("Fav Playlists", "Playlists", "TidalUserFavorites")</li>
+                    @*TODO Improve dropdown menu*@
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Tidal
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li>@Html.ActionLink("Playlists", "Index", "TidalUserPlaylists")</li>
+                                <li>@Html.ActionLink("Fav Artists", "Artists", "TidalUserFavorites")</li>
+                                <li>@Html.ActionLink("Fav Albums", "Albums", "TidalUserFavorites")</li>
+                                <li>@Html.ActionLink("Fav Tracks", "Tracks", "TidalUserFavorites")</li>
+                                <li>@Html.ActionLink("Fav Playlists", "Playlists", "TidalUserFavorites")</li>
+                                @*<li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>*@
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Spotify
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                <li>TODO</li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
                 @Html.Partial("Partials/TidalLogin")
             </div>
@@ -36,7 +60,7 @@
     @RenderBody()
     <hr/>
     <footer>
-        <p>&copy; @DateTime.Now.Year - Tidal Explorer</p>
+        <p>&copy; @DateTime.Now.Year - Music Streaming Service Switcher</p>
     </footer>
 </div>
     <script src="/wwwroot/lib/jquery/dist/jquery.min.js"></script>
